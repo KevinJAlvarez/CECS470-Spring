@@ -1,6 +1,6 @@
 /* 
 Adds up every value in a sequence, from 1 up to a given input
-This version uses the naieve method of a loop
+This version uses the naive method of a loop
 Ex: target = 3, returns 1 + 2 + 3 = 6
 */
 function AddUpSlow(target) {
