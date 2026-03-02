@@ -1,0 +1,21 @@
+.james-section #movie_title {
+  font-style: italic;
+  font-size: large;
+}
+
+.james-section .box {
+  border: 2px solid black;
+  background-color: white;
+  padding: 15px;
+  margin: 10px;
+  transition: transform 2s ease 0s;
+}
+
+.james-section .box:hover {
+  transform: scale(1.03);
+}
+
+.james-section .container {
+  display: flex;
+  flex-direction: column;
+}

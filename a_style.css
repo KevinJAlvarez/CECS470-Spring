@@ -1,0 +1,91 @@
+body {
+  margin: 20pt;
+  font-family: 'Arial', cursive, sans-serif;
+  background: #f6f4ff;
+  color: #1f1f2a;
+}
+
+.anthony-section .container {
+  max-width: 1000px;
+  margin: 36px auto;
+  padding: 18px;
+
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  grid-template-areas:
+    'header header'
+    'about  classes'
+    'about  favorites';
+  gap: 18px;
+}
+
+.anthony-section header {
+  grid-area: header;
+  padding: 14px 16px;
+  border-radius: 14px;
+  border: 1px;
+}
+
+.anthony-section header h1 {
+  margin: 0;
+  font-weight: 800;
+  letter-spacing: 0.2px;
+}
+
+.anthony-section .about-me {
+  grid-area: about;
+}
+.anthony-section .classes {
+  grid-area: classes;
+}
+.anthony-section .favorites {
+  grid-area: favorites;
+}
+
+.anthony-section .about-me,
+.anthony-section .classes,
+.anthony-section .favorites {
+  border-radius: 14px;
+  padding: 18px;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  box-shadow: 0 10px 24px rgba(20, 16, 45, 0.06);
+  transition:
+    transform 0.15s ease,
+    box-shadow 0.15s ease;
+}
+
+.anthony-section .about-me:hover,
+.anthony-section .classes:hover,
+.anthony-section .favorites:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 14px 30px rgba(20, 16, 45, 0.1);
+}
+
+.anthony-section h2 {
+  margin: 0 0 10px 0;
+  font-size: 1.1rem;
+}
+
+.anthony-section .about-me {
+  align-self: start;
+  line-height: 1.5;
+}
+
+.anthony-section .class-list {
+  margin: 10px 0 0;
+  padding-left: 18px;
+  line-height: 1.7;
+}
+
+.anthony-section .favorites-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 12px;
+}
+
+.anthony-section .favs {
+  padding: 10px 12px;
+  border-radius: 12px;
+  font-weight: 700;
+}
