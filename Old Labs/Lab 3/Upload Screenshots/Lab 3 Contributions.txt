@@ -1,0 +1,3 @@
+CSS written by James Curran
+Content and structure of HTML written by Anthony Theng
+Checkbox and dropdown functionality written by Kevin Alvarez

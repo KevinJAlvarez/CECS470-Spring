@@ -1,0 +1,20 @@
+/*CSS Written by James Curran*/
+body {
+  background-color: aquamarine;
+}
+
+p {
+  text-align: center;
+  color: gray;
+  font-family: "Courier New", Courier, monospace;
+}
+
+#favorites {
+  color: red;
+  font-size: large;
+}
+
+#classes {
+  color: Purple;
+  font-size: x-large;
+}
