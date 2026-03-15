@@ -1,3 +1,10 @@
+body {
+  margin: 20pt;
+  font-family: 'Arial', cursive, sans-serif;
+  background: #f6f4ff;
+  color: #1f1f2a;
+}
+
 .kevin-section .container {
   display: grid;
   grid-template-columns: 1fr 1fr;

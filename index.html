@@ -1,123 +1,47 @@
 <!doctype html>
-<html>
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Group Assignment 5</title>
-
-    <link rel="stylesheet" href="k_style.css" />
-    <link rel="stylesheet" href="j_style.css" />
-    <link rel="stylesheet" href="a_style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CECS 470 Homepage</title>
+    <link rel="stylesheet" href="home_style.css" />
   </head>
-
   <body>
-    <!--  Kevin's Section -->
-    <section class="kevin-section">
-      <div class="container">
-        <header>
-          <h1><strong>Kevin Alvarez's Webpage!</strong></h1>
-        </header>
-
-        <section class="about">
-          <h2>About Me!</h2>
-          Hey! My name is Kevin Alvarez, I am a transfer student from Cerritos
-          College, and I am currently in my final semester here at CSULB.
-        </section>
-
-        <section class="enjoy">
-          <h2>Things I enjoy:</h2>
-          Watching films, photography, and playing video games.
-        </section>
-
-        <section class="classes">
-          <h2>Here are the classes I'm taking this semester!</h2>
-          <ul class="class-list">
-            <li>CECS 435</li>
-            <li>CECS 427</li>
-            <li>CECS 455</li>
-            <li>CECS 470</li>
-          </ul>
-        </section>
-
-        <section class="favorites">
-          <h2>A few of my favorite Movies and TV Shows:</h2>
-          <div class="favorites-list">
-            <div class="favs">Neon Genesis Evangelion</div>
-            <div class="favs">A Knight of Seven Kingdoms</div>
-            <div class="favs">Shin Godzilla</div>
-          </div>
-        </section>
-      </div>
-    </section>
-
-    <hr />
-
-    <!-- James's Section -->
-    <section class="james-section">
-      <h1>James Curran's Webpage</h1>
-
-      <div class="container">
-        <div class="box">
-          I like to play tabletop rpgs like Pathfinder. I also quite enjoy board
-          games like Betrayal on the House on the Hill, and Dead of Winter
-        </div>
-
-        <div class="box">
-          These are the classes that I'm taking, which one is your favorite?
-          <form>
-            <input type="radio" name="fav_class" value="CECS 470" />
-            <label>CECS 470</label><br />
-
-            <input type="radio" name="fav_class" value="CECS 474" />
-            <label>CECS 474</label><br />
-          </form>
-        </div>
-
-        <div class="box">
-          My three favorite movies are:
-          <div>1. Star Wars IV</div>
-          <div>2. Back to the Future</div>
-          <div>3. Klaus (2019)</div>
-        </div>
-      </div>
-
-      <p>Thank you for visiting my webpage</p>
-    </section>
-
-    <hr />
-
-    <!-- Anthony's Section -->
-    <section class="anthony-section">
-      <div class="container">
-        <header>
-          <h1><strong>Anthony Theng's Webpage</strong></h1>
-        </header>
-
-        <section class="about-me">
-          <h2>About Section</h2>
-          My name is Anthony Theng and this is my final year at CSULB. I am a
-          Computer Science major and like to play video games.
-        </section>
-
-        <section class="classes">
-          <h2>Classes for this semester</h2>
-          <ul class="class-list">
-            <li>CECS 470</li>
-            <li>CECS 475</li>
-            <li>REC 340</li>
-            <li>CECS 491B</li>
-            <li>CECS 448</li>
-          </ul>
-        </section>
-
-        <section class="favorites">
-          <h2>Favorite Movies and Shows</h2>
-          <div class="favorites-list">
-            <div class="favs">CODE GEASS</div>
-            <div class="favs">Cyberpunk EdgeRunners</div>
-            <div class="favs">RE: Zero</div>
-          </div>
-        </section>
-      </div>
-    </section>
+    <header>
+      <h1><strong>Welcome to Our Webpage!</strong></h1>
+    </header>
+    <table class="styled-table">
+      <thead>
+        <tr>
+          <th>Photo</th>
+          <th>Name</th>
+          <th>Website Link</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th>
+            <img
+              src="/images/shinji.jpg"
+              alt="Shinji being sad"
+              width="250"
+              height="auto"
+            />
+          </th>
+          <th>Kevin Alvarez</th>
+          <th><a href="kevin_page.html">Kevin's Page</a></th>
+        </tr>
+        <tr>
+          <th>Pic 2</th>
+          <th>James Curran</th>
+          <th>Personal Link 2</th>
+        </tr>
+        <tr>
+          <th>Pic 3</th>
+          <th>Anthony Theng</th>
+          <th>Personal Link 3</th>
+        </tr>
+      </tbody>
+    </table>
   </body>
 </html>

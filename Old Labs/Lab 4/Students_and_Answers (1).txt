@@ -1,0 +1,10 @@
+James Curran
+Kevin Alvarez
+Anthony Theng
+
+All of us made our own html and css files, but submitted one per professor's instruction
+
+
+Upload a screenshot of both HTML codes and which is a better way?
+Answer:
+    The HTML table is the better way to display the information, as it is far easier to style, edit, and update as needed than an image
