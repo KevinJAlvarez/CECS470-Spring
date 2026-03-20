@@ -19,3 +19,14 @@ Instead of a loop, directly calculates total using triangular number formula:
 function AddUpFast(target) {
   return (target * (target + 1)) / 2;
 }
+
+function handleAddUp() {
+  var input = parseFloat(document.getElementById('add_up_input').value);
+  if (input < 0) {
+    input = 0
+  }
+  const add_up_output = AddUpFast(input);
+
+  //return and display
+  document.getElementById("display_add_up_result").innerText = add_up_output;
+}
