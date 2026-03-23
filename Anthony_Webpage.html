@@ -34,6 +34,23 @@
                     <li>CECS 448</li>
                 </ul>
             </section>
+
+            <section class="card">
+                <h2>Javascript thing</h2>
+                <p id="status-text">Click the button for a quick message.</p>
+                <button id="status-btn" type="button">Say Hi</button>
+            </section>
         </main>
+
+        <script>
+            const statusButton = document.getElementById("status-btn");
+            const statusText = document.getElementById("status-text");
+
+            if (statusButton && statusText) {
+                statusButton.addEventListener("click", function () {
+                    statusText.textContent = "Thanks for visiting my page!";
+                });
+            }
+        </script>
     </body>
 </html>
