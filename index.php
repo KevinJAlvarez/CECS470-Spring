@@ -111,13 +111,15 @@
     
 <!-- March 17th: Green for St. Patricks Day-->
 <!-- March 22nd: Blue for World Water Day-->
+<!-- March 23rd: Red for World Meteorological Day-->
 <!-- March 31st: Pink for International Transgender Day of Visibility -->
     <script>
       
       var dayColors = {
         17: '#1a6316',
         22: '#0f5e9c',
-        31: '#FFB6C1'
+        31: '#FFB6C1',
+        23: '#FF0000'
       }
 
       function changeTheme(day) {
