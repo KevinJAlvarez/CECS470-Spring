@@ -58,9 +58,9 @@
       </tbody>
     </table>
 
+    <h2 class="month-title">March 2026</h2>
     <table class="calendar">
-      <thead>March 2026</thead>
-      <tbody>
+      <thead>
         <tr>
           <th>Sun</th>
           <th>Mon</th>
@@ -70,49 +70,45 @@
           <th>Fri</th>
           <th>Sat</th>
         </tr>
-        <tr>
-          <th>1</th>
-          <th>2</th>
-          <th>3</th>
-          <th>4</th>
-          <th>5</th>
-          <th>6</th>
-          <th>7</th>
-        </tr>
-        <tr>
-          <th>8</th>
-          <th>9</th>
-          <th>10</th>
-          <th><button class="Plumbling" type="button">11</button></th>
-          <th>12</th>
-          <th>13</th>
-          <th>14</th>
-        </tr>
-        <tr>
-          <th>15</th>
-          <th>16</th>
-          <th>17</th>
-          <th>18</th>
-          <th>19</th>
-          <th>20</th>
-          <th>21</th>
-        </tr>
-        <tr>
-          <th>22</th>
-          <th>23</th>
-          <th>24</th>
-          <th>25</th>
-          <th>25</th>
-          <th>26</th>
-          <th>27</th>
-        </tr>
-        <tr>
-          <th>28</th>
-          <th>29</th>
-          <th>30</th>
-          <th><button class="Trans-Aware" type="button">31</button></th>
-        </tr>
+      </thead>
+
+      <tbody>
+        <?php
+        $year = 2026;
+        $month = 3;
+        $totalDays = cal_days_in_month(CAL_GREGORIAN, $month,  $year);
+        $startDay = date('w', mktime(0,0,0, $month,1, $year));
+
+        $day = 1;
+        $cellCount = 0;
+        $rows = ceil(($startDay + $totalDays) / 7);
+
+        for ($row = 0; $row < $rows; $row++) {
+          echo "<tr>";
+          for ($col = 0; $col < 7; $col++) {
+            if ($cellCount < $startDay || $day > $totalDays) {
+              echo "<td></td>";
+            } else {
+              echo "<td class='day' onclick='changeTheme($day)'>$day</td>";
+              $day++;
+            }
+            $cellCount++;
+          }
+          echo "</tr>";
+        }
+        ?>
       </tbody>
     </table>
+    
+    <script>
+      var dayColors = {
+        17: '#1a6316'
+      }
+
+      function changeTheme(day) {
+        document.body.style.background = dayColors[day];
+      }
+
+    </script>
   </body>
 </html>
