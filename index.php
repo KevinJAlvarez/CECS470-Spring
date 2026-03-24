@@ -82,12 +82,21 @@
         $day = 1;
         $cellCount = 0;
         $rows = ceil(($startDay + $totalDays) / 7);
+        $special_days = array(
+          17 => true, 
+          22 => true, 
+          31 => true
+        );  
+
 
         for ($row = 0; $row < $rows; $row++) {
           echo "<tr>";
           for ($col = 0; $col < 7; $col++) {
             if ($cellCount < $startDay || $day > $totalDays) {
               echo "<td></td>";
+            } else if (isset($special_days[$day])) {
+              echo "<td class='s_day' onclick='changeTheme($day)'>$day</td>";
+              $day++;
             } else {
               echo "<td class='day' onclick='changeTheme($day)'>$day</td>";
               $day++;
@@ -100,9 +109,15 @@
       </tbody>
     </table>
     
+<!-- March 17th: Green for St. Patricks Day-->
+<!-- March 22nd: Blue for World Water Day-->
+<!-- March 31st: Pink for International Transgender Day of Visibility -->
     <script>
+      
       var dayColors = {
-        17: '#1a6316'
+        17: '#1a6316',
+        22: '#0f5e9c',
+        31: '#FFB6C1'
       }
 
       function changeTheme(day) {

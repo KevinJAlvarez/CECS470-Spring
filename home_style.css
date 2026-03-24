@@ -35,6 +35,20 @@ body {
   color: white;
 }
 
+/* s_days handles special days on the calendar*/
+.calendar td.s_day {
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 50%;
+  font-style: italic;
+  color: purple;
+}
+
+.calendar td.s_day:hover {
+  background-color: #1f1f2a;
+  color: white;
+}
+
 .styled-table thead tr {
   background-color: gold;
   color: #ffffff;
