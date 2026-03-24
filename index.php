@@ -85,6 +85,7 @@
         $special_days = array(
           17 => true, 
           22 => true, 
+          23 => true,
           31 => true
         );  
 
@@ -118,8 +119,8 @@
       var dayColors = {
         17: '#1a6316',
         22: '#0f5e9c',
-        31: '#FFB6C1',
-        23: '#FF0000'
+        23: '#FF0000',
+        31: '#FFB6C1'
       }
 
       function changeTheme(day) {
