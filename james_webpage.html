@@ -6,6 +6,8 @@
     <link rel="stylesheet" href="j_style.css" />
   </head>
   <body>
+    <!--The script doesn't work if I don't have this-->
+    <button id="themeToggle" style="display: none">Dark Mode</button>
     <div class="Long_Beach">
       <img
         class="Long_Beach_Logo"
@@ -33,8 +35,16 @@
     </section>
     <section class="container">
       <div class="box">
-        I like to play tabletop rpgs like Pathfinder. I also quite enjoy board
-        games like Betrayal on the House on the Hill, and Dead of Winter
+        <img
+          src="images/Pathfinder2e.jpg"
+          alt="Pathfinder 2e book cover"
+          class="toggle-img"
+          style="width: 150px; cursor: pointer"
+        />
+        <div class="details" style="display: none">
+          I like to play tabletop rpgs like Pathfinder. I also quite enjoy board
+          games like Betrayal on the House on the Hill, and Dead of Winter
+        </div>
       </div>
       <div class="box">
         These are the classes I'm taking this semester
@@ -44,16 +54,25 @@
         </ul>
       </div>
       <div class="box">
-        My three favorite movies are:
-        <ol>
-          <li>Star Wars IV</li>
-          <li>Back to the Future</li>
-          <li>Klaus (2019)</li>
-        </ol>
+        <img
+          src="images/Star_Wars_Poster.jpg"
+          alt="Star Wars poster"
+          class="toggle-img"
+          style="width: 150px; cursor: pointer"
+        />
+        <div class="details" style="display: none">
+          My three favorite movies are:
+          <ol>
+            <li>Star Wars IV</li>
+            <li>Back to the Future</li>
+            <li>Klaus (2019)</li>
+          </ol>
+        </div>
       </div>
       <div class="box">
-        Enter any number! You'll get the result of 1 + 2 + 3... up to your input!
-        <input type="number" id="add_up_input" placeholder="Enter a number">
+        Enter any number! You'll get the result of 1 + 2 + 3... up to your
+        input!
+        <input type="number" id="add_up_input" placeholder="Enter a number" />
         <button onclick="handleAddUp()">Calculate!</button>
         <p>Result: <span id="display_add_up_result"></span></p>
       </div>
@@ -64,7 +83,8 @@
     <p class="homepage">
       <a href="index.html">Return to homepage</a>
     </p>
-  <script src="addition_script.js" defer></script>
+    <script src="addition_script.js" defer></script>
+    <script src="k_script.js"></script>
   </body>
 </html>
 
