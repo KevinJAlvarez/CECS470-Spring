@@ -73,3 +73,61 @@ body {
 .styled-table tbody tr:last-of-type {
   border-bottom: 2px solid gold;
 }
+
+#login-widget {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px; /* Rounds the corners */
+  padding: 24px;
+  width: 260px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds a subtle "lift" */
+  margin: 20px auto;
+}
+
+/* Stack inputs vertically with spacing */
+#logged-out-view {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+#login-widget input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+/* Highlight the input when the user clicks in it */
+#login-widget input:focus {
+  border-color: #007bff;
+}
+
+#login-btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.2s;
+}
+
+#login-btn:hover {
+  background-color: #0056b3;
+}
+
+#error-msg {
+  color: #d93025;
+  font-size: 13px;
+  margin: 0;
+  text-align: center;
+}
+
+#logged-in-view {
+  text-align: center;
+}

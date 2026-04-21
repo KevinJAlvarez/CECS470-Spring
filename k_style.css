@@ -116,6 +116,7 @@ body.dark #themeToggle {
   background-color: whitesmoke;
   border: solid 2.5pt black;
   transition: transform 0.3s;
+  text-align: center;
 }
 
 .kevin-section .favorites {
@@ -126,8 +127,18 @@ body.dark #themeToggle {
 
 .kevin-section .favorites-list {
   display: flex;
-  gap: 15px;
+  gap: 20px;
   justify-content: center;
+  flex-wrap: wrap;
+}
+
+.fav-card {
+  text-align: center;
+  max-width: 150px;
+}
+
+.fav-card .details {
+  margin-top: 10px;
 }
 
 .kevin-section .favs {

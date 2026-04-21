@@ -11,7 +11,7 @@
       <div class="logo-container">
         <img class="logo" src="/images/lb.svg" alt="CSULB logo" />
         <h1 class="site-title">Kevin Alvarez's Webpage!</h1>
-        <img class="shinji" src="images/shinji.jpg" alt="Shinji" />
+        <img class="shinji" src="images/Kevin.jpg" alt="Shinji" />
         <button id="themeToggle">Dark</button>
       </div>
     </header>
@@ -20,33 +20,88 @@
       <div class="container">
         <section class="about">
           <h2>About Me!</h2>
-          <p>
-            Hey! My name is Kevin Alvarez, I am a transfer student from Cerritos
-            College, and I am currently in my final semester here at CSULB.
-          </p>
+          <img
+            src="images/shinji.jpg"
+            alt="About Me"
+            class="toggle-img"
+            style="width: 150px; cursor: pointer"
+          />
+          <div class="details" style="display: none">
+            <p>
+              Hey! My name is Kevin Alvarez, I am a transfer student from
+              Cerritos College, and I am currently in my final semester here at
+              CSULB.
+            </p>
+          </div>
         </section>
 
         <section class="enjoy">
           <h2>Things I enjoy:</h2>
-          <p>Watching films, photography, and playing video games.</p>
+          <img
+            src="images/k_hobbies.png"
+            alt="Enjoy"
+            class="toggle-img"
+            style="width: 150px; cursor: pointer"
+          />
+          <div class="details" style="display: none">
+            <p>Watching films, photography, and playing video games.</p>
+          </div>
         </section>
 
         <section class="classes">
           <h2>Here are the classes I'm taking this semester!</h2>
-          <ul class="class-list">
-            <li>CECS 435</li>
-            <li>CECS 427</li>
-            <li>CECS 455</li>
-            <li>CECS 470</li>
-          </ul>
+          <img
+            src="images/class.jpg"
+            alt="Classes"
+            class="toggle-img"
+            style="width: 150px; cursor: pointer"
+          />
+          <div class="details" style="display: none">
+            <p>CECS 435</p>
+            <p>CECS 427</p>
+            <p>CECS 455</p>
+            <p>CECS 470</p>
+          </div>
         </section>
 
         <section class="favorites">
           <h2>A few of my favorite Movies and TV Shows:</h2>
           <div class="favorites-list">
-            <div class="favs">Neon Genesis Evangelion</div>
-            <div class="favs">A Knight of Seven Kingdoms</div>
-            <div class="favs">Shin Godzilla</div>
+            <div class="fav-card">
+              <img
+                src="images/evangelion.png"
+                alt="Evangelion"
+                class="toggle-img"
+                style="width: 150px; cursor: pointer"
+              />
+              <div class="details" style="display: none">
+                <div class="favs">Neon Genesis Evangelion</div>
+              </div>
+            </div>
+
+            <div class="fav-card">
+              <img
+                src="images/knight.jpg"
+                alt="A Knight of Seven Kingdoms"
+                class="toggle-img"
+                style="width: 150px; cursor: pointer"
+              />
+              <div class="details" style="display: none">
+                <div class="favs">A Knight of Seven Kingdoms</div>
+              </div>
+            </div>
+
+            <div class="fav-card">
+              <img
+                src="images/shin.png"
+                alt="Shin Godzilla"
+                class="toggle-img"
+                style="width: 150px; cursor: pointer"
+              />
+              <div class="details" style="display: none">
+                <div class="favs">Shin Godzilla</div>
+              </div>
+            </div>
           </div>
         </section>
       </div>

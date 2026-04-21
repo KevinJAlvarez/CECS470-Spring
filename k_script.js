@@ -11,3 +11,18 @@ themeToggle.addEventListener('click', () => {
   themeToggle.textContent = isDark ? 'Light' : 'Dark';
   localStorage.setItem('theme', isDark ? 'dark' : 'light');
 });
+
+const images = document.querySelectorAll('.toggle-img');
+
+images.forEach((img) => {
+  img.addEventListener('click', () => {
+    const details = img.parentElement.querySelector('.details');
+
+    // toggles visibility
+    if (details.style.display === 'none') {
+      details.style.display = 'block';
+    } else {
+      details.style.display = 'none';
+    }
+  });
+});
