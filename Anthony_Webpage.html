@@ -1,56 +1,96 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>My Homepage</title>
-        <link rel="stylesheet" href="Anthony_Style.css" />
-    </head>
-    <body>
-        <header class="page-header">
-            <h1>Anthony Theng Homepage <img class= "simon" src="Simon.jpg" alt="Simon" /></h1>
-            <p>Hey, I'm Anthony Theng and this is my final semester at CSULB. I enjoy watching anime and movies.</p>
-        </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Homepage</title>
+    <link rel="stylesheet" href="Anthony_Style.css" />
+  </head>
+  <body>
+    <header class="page-header">
+      <h1>
+        Anthony Theng Homepage <img class="simon" src="Simon.jpg" alt="Simon" />
+      </h1>
+      <p>
+        Hey, I'm Anthony Theng and this is my final semester at CSULB. I enjoy
+        watching anime and movies.
+      </p>
+    </header>
+    <div class="content-layout">
+      <a href="index.html" class="gif-home-link" aria-label="Go to homepage">
+        <span class="gif-home-text"
+          >Click the gif to go back to the home screen!</span
+        >
+        <img src="images/cat_water.gif" alt="Funny cat GIF" class="my-gif" />
+      </a>
+      <main class="container">
+        <section class="card">
+          <h2>My Favorite Shows/Movies</h2>
+          <p>
+            Here are some of my favorite shows and movies (In no particular
+            order):
+          </p>
+          <ul id="favorites-list">
+            <li data-title="Cyberpunk Edgerunners">Cyberpunk Edgerunners</li>
+            <li data-title="Gurren Lagann">Gurren Lagann</li>
+            <li data-title="Puss in Boots: The Last Wish">
+              Puss in Boots: The Last Wish
+            </li>
+          </ul>
+          <div class="card-actions">
+            <button id="pick-favorite-btn" type="button">
+              Pick One For Me
+            </button>
+            <p id="favorite-text">
+              Click a title or use the button to pick a favorite.
+            </p>
+          </div>
+        </section>
 
-        <main class="container">
-            <section class="card">
-                <h2>My Favorite Shows/Movies</h2>
-                <p>Here are some of my favorite shows and movies (In no particular order):</p>
-                <ul>
-                    <li>Cyberpunk Edgerunners</li>
-                    <li>Gurren Lagann</li>
-                    <li>Puss in Boots: The Last Wish</li>
-                </ul>
-            </section>
+        <section class="card">
+          <h2>My Classes</h2>
+          <p>Here are some of the classes I am currently taking:</p>
+          <ul class="class-list">
+            <li>
+              <label
+                ><input class="class-check" type="checkbox" /> CECS 470</label
+              >
+            </li>
+            <li>
+              <label
+                ><input class="class-check" type="checkbox" /> CECS 475</label
+              >
+            </li>
+            <li>
+              <label
+                ><input class="class-check" type="checkbox" /> REC 340</label
+              >
+            </li>
+            <li>
+              <label
+                ><input class="class-check" type="checkbox" /> CECS 491B</label
+              >
+            </li>
+            <li>
+              <label
+                ><input class="class-check" type="checkbox" /> CECS 448</label
+              >
+            </li>
+          </ul>
+          <p id="class-progress">0 of 5 classes checked.</p>
+        </section>
 
-            <section class="card">
-                <h2>My Classes</h2>
-                <p>Here are some of the classes I am currently taking:</p>
-                <ul>
-                    <li>CECS 470</li>
-                    <li>CECS 475</li>
-                    <li>REC 340</li>
-                    <li>CECS 491B</li>
-                    <li>CECS 448</li>
-                </ul>
-            </section>
+        <section class="card">
+          <h2>Javascript Zone</h2>
+          <p id="status-text">Click the button for a quick message.</p>
+          <div class="card-actions">
+            <button id="status-btn" type="button">Say Hi</button>
+            <button id="mood-btn" type="button">How Is Today?</button>
+          </div>
+        </section>
+      </main>
+    </div>
 
-            <section class="card">
-                <h2>Javascript thing</h2>
-                <p id="status-text">Click the button for a quick message.</p>
-                <button id="status-btn" type="button">Say Hi</button>
-            </section>
-        </main>
-
-        <script>
-            const statusButton = document.getElementById("status-btn");
-            const statusText = document.getElementById("status-text");
-
-            if (statusButton && statusText) {
-                statusButton.addEventListener("click", function () {
-                    statusText.textContent = "Thanks for visiting my page!";
-                });
-            }
-        </script>
-    </body>
+    <script src="anthony_script.js"></script>
+  </body>
 </html>
