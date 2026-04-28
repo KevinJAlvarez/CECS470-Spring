@@ -1,7 +1,0 @@
-Lab 2 for CECS 470 Section 2
-
-Contributors
-
-James Curran
-Kevin Alvarez
-Anthony Theng
