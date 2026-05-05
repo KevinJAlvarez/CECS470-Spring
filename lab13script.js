@@ -9,6 +9,7 @@ const profiles = [
       "A Knight of Seven Kingdoms",
       "Shin Godzilla",
     ],
+    neighbor: "Fun fact about my groupmate James, he has been running the same ttrpg campagin for seven years!"
   },
   {
     name: "James Curran",
@@ -16,6 +17,7 @@ const profiles = [
     desc: "My name is James Curran, and I graduate <b>this semester!</b> I like to play <b>tabletop rpgs</b> and board games with my friends",
     classes: ["CECS 470", "CECS 474"],
     favs: ["Star Wars IV", "Back to the Future", "Klaus (2019)"],
+    neighbor: "Anthony Fact Here"
   },
   {
     name: "Anthony Theng",
@@ -27,6 +29,7 @@ const profiles = [
       "Gurren Lagann",
       "Puss in Boots: The Last Wish",
     ],
+    neighbor: "Kevin Fact Here"
   },
 ];
 
@@ -43,6 +46,8 @@ function updateProfile() {
 
   const favs_list = document.getElementById("favorites");
   favs_list.innerHTML = p.favs.map((item) => `<li>${item}</li>`).join("");
+
+  document.getElementById("neighbor").textContent = p.neighbor;
 }
 
 document.getElementById("next-btn").addEventListener("click", () => {
