@@ -18,7 +18,7 @@ const profiles = [
     desc: 'My name is James Curran, and I graduate <b>this semester!</b> I like to play <b>tabletop rpgs</b> and board games with my friends',
     classes: ['CECS 470', 'CECS 474'],
     favs: ['Star Wars IV', 'Back to the Future', 'Klaus (2019)'],
-    neighbor: 'Anthony Fact Here',
+    neighbor: 'Fun fact about my groupmate Anthony, his favorite superhero is Nightwing!',
   },
   {
     name: 'Anthony Theng',
