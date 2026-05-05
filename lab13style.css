@@ -1,5 +1,33 @@
+body {
+  font-family: Arial, sans-serif;
+  background: wheat;
+  text-align: center;
+  padding: 20px;
+}
+
+#profile-card {
+  background: whitesmoke;
+  border: 2px solid black;
+  display: inline-block;
+  padding: 20px 40px;
+  margin-bottom: 16px;
+}
+
+#profile-card ul {
+  padding-left: 20px;
+  text-align: left;
+  display: inline-block;
+}
+
 img {
   width: 150px;
   height: 150px;
   object-fit: cover;
+}
+
+#next-btn {
+  padding: 8px 20px;
+  font-size: 15px;
+  cursor: pointer;
+  border-radius: 5px;
 }
